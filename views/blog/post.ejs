@@ -1,0 +1,67 @@
+<%- include('../partials/head') %>
+<div class="container post-layout">
+  <article class="post">
+    <header class="post-header">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Trang chủ</a> / <a href="/blog">Blog</a></nav>
+      <h1><%= post.title %></h1>
+      <p class="post-meta">
+        <time datetime="<%= post.date.toISOString() %>"><%= formatDate(post.date) %></time>
+<% if (post.author) { %> · <%= post.author %><% } %>
+        · <%= post.readingTime %> phút đọc
+      </p>
+<% if (post.tags.length) { %>
+      <p class="tags">
+<% post.tags.forEach(function (tag) { %>
+        <a class="tag" href="/blog/tags/<%= tag.slug %>">#<%= tag.name %></a>
+<% }) %>
+      </p>
+<% } %>
+<% if (post.image) { %>
+      <img class="post-cover" src="<%= post.image %>" alt="<%= post.title %>">
+<% } %>
+    </header>
+
+    <div class="prose">
+      <%- post.html %>
+    </div>
+
+<% if (post.updated > post.date) { %>
+    <p class="post-updated">Cập nhật lần cuối: <time datetime="<%= post.updated.toISOString() %>"><%= formatDate(post.updated) %></time></p>
+<% } %>
+
+    <nav class="post-nav" aria-label="Bài viết khác">
+<% if (newer) { %>
+      <a class="card" href="<%= newer.url %>"><small>Bài mới hơn</small><span>« <%= newer.title %></span></a>
+<% } else { %><span></span><% } %>
+<% if (older) { %>
+      <a class="card align-right" href="<%= older.url %>"><small>Bài cũ hơn</small><span><%= older.title %> »</span></a>
+<% } %>
+    </nav>
+
+    <div class="post-cta card">
+      <h2><%= site.landing.cta.title %></h2>
+      <p><%= site.landing.cta.subtitle %></p>
+      <%- include('../partials/download-btn', { placement: 'blog', size: 'lg' }) %>
+    </div>
+
+<% if (site.features.leadForm) { %>
+    <div class="post-cta card">
+      <h2><%= site.lead.title %></h2>
+      <p><%= site.lead.subtitle %></p>
+      <a class="btn" href="/#dang-ky">Đăng ký ngay</a>
+    </div>
+<% } %>
+  </article>
+
+<% if (post.toc.length) { %>
+  <aside class="toc" aria-label="Mục lục">
+    <p class="toc-title">Mục lục</p>
+    <ul>
+<% post.toc.forEach(function (item) { %>
+      <li class="toc-l<%= item.level %>"><a href="#<%= item.id %>"><%= item.text %></a></li>
+<% }) %>
+    </ul>
+  </aside>
+<% } %>
+</div>
+<%- include('../partials/foot') %>

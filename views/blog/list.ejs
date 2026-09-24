@@ -1,0 +1,40 @@
+<%- include('../partials/head') %>
+<div class="container blog-layout">
+  <div>
+    <header class="page-header">
+      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Trang chủ</a> / <a href="/blog">Blog</a></nav>
+      <h1><%= heading %></h1>
+      <p><%= intro %></p>
+    </header>
+<% if (!posts.length) { %>
+    <p>Chưa có bài viết nào.</p>
+<% } %>
+    <div class="post-list">
+<% posts.forEach(function (post) { %>
+      <%- include('../partials/post-card', { post: post }) %>
+<% }) %>
+    </div>
+<% if (pagination && pagination.totalPages > 1) { %>
+    <nav class="pagination" aria-label="Phân trang">
+<% if (pagination.page > 1) { %>
+      <a rel="prev" href="<%= pagination.page === 2 ? pagination.baseUrl : pagination.baseUrl + '?page=' + (pagination.page - 1) %>">← Mới hơn</a>
+<% } %>
+      <span>Trang <%= pagination.page %> / <%= pagination.totalPages %></span>
+<% if (pagination.page < pagination.totalPages) { %>
+      <a rel="next" href="<%= pagination.baseUrl %>?page=<%= pagination.page + 1 %>">Cũ hơn →</a>
+<% } %>
+    </nav>
+<% } %>
+  </div>
+<% if (tags.length) { %>
+  <aside class="sidebar" aria-label="Chủ đề">
+    <h2>Chủ đề</h2>
+    <ul class="tag-list">
+<% tags.forEach(function (tag) { %>
+      <li><a class="tag<%= activeTag === tag.slug ? ' active' : '' %>" href="/blog/tags/<%= tag.slug %>">#<%= tag.name %> <small>(<%= tag.count %>)</small></a></li>
+<% }) %>
+    </ul>
+  </aside>
+<% } %>
+</div>
+<%- include('../partials/foot') %>

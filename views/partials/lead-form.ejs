@@ -1,0 +1,33 @@
+<section class="section lead" id="dang-ky">
+  <div class="container lead-inner">
+    <div>
+      <h2><%= site.lead.title %></h2>
+      <p class="lead-subtitle"><%= site.lead.subtitle %></p>
+    </div>
+    <form class="lead-form" action="/api/lead" method="post" novalidate data-lead-form>
+      <label>
+        <span>Họ và tên *</span>
+        <input name="fullName" type="text" autocomplete="name" required minlength="2" maxlength="100" placeholder="Nguyễn Văn A">
+        <small class="field-error" data-error-for="fullName"></small>
+      </label>
+      <label>
+        <span>Số điện thoại *</span>
+        <input name="phone" type="tel" autocomplete="tel" inputmode="tel" required maxlength="20" placeholder="0912 345 678">
+        <small class="field-error" data-error-for="phone"></small>
+      </label>
+      <label>
+        <span>Địa chỉ *</span>
+        <input name="address" type="text" autocomplete="street-address" required maxlength="250" placeholder="Số nhà, đường, quận/huyện, tỉnh/thành">
+        <small class="field-error" data-error-for="address"></small>
+      </label>
+      <!-- Honeypot chống spam: người dùng thật không nhìn thấy trường này -->
+      <label class="hp" aria-hidden="true">Website <input name="website" type="text" tabindex="-1" autocomplete="off"></label>
+      <button class="btn btn-lg" type="submit"><%= site.lead.submitLabel %></button>
+      <p class="form-status" role="status" aria-live="polite"
+         data-success="<%= site.lead.successMessage %>" data-error="<%= site.lead.errorMessage %>"><%
+        if (leadStatus === 'success') { %><%= site.lead.successMessage %><% }
+        else if (leadStatus === 'error') { %><%= site.lead.errorMessage %><% } %></p>
+    </form>
+  </div>
+</section>
+<script src="/js/lead-form.js" defer></script>

@@ -1,0 +1,35 @@
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong><%= site.name %></strong>
+        <p><%= site.tagline %></p>
+        <p class="footer-cta"><%- include('download-btn', { placement: 'footer' }) %></p>
+      </div>
+      <nav aria-label="Liên kết cuối trang">
+        <a href="/">Trang chủ</a>
+        <a href="/#tinh-nang">Tính năng</a>
+        <a href="/#uu-dai">Ưu đãi</a>
+        <a href="/blog">Blog</a>
+        <a href="/sitemap.xml">Sitemap</a>
+      </nav>
+      <p class="disclaimer">
+        Website giới thiệu độc lập, không phải trang chính thức của Công ty Cổ phần ShopeePay.
+        Thông tin ưu đãi có thể thay đổi — vui lòng xem chi tiết trong ứng dụng hoặc tại
+        <a href="https://shopeepay.vn/" target="_blank" rel="noopener">shopeepay.vn</a>. Tổng đài hỗ trợ ShopeePay: 1900 6906.
+      </p>
+      <p class="copyright">© <%= new Date().getFullYear() %> <%= site.name %>.</p>
+    </div>
+  </footer>
+
+  <!-- Thanh "Tải ứng dụng" cố định cuối màn hình (chỉ hiện trên điện thoại) -->
+  <div class="sticky-download" role="complementary" aria-label="Tải ứng dụng">
+    <div class="sticky-download-text">
+      <strong>🎁 Voucher 1 triệu cho bạn mới</strong>
+      <small>Miễn phí tải & đăng ký</small>
+    </div>
+    <%- include('download-btn', { placement: 'sticky' }) %>
+  </div>
+  <script src="/js/download.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="480" viewBox="0 0 560 480" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff7337"/><stop offset="1" stop-color="#d0391b"/></linearGradient>
+    <filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#ee4d2d" flood-opacity="0.25"/></filter>
+  </defs>
+  <circle cx="300" cy="240" r="200" fill="#ee4d2d" opacity="0.08"/>
+  <circle cx="300" cy="240" r="140" fill="#ee4d2d" opacity="0.08"/>
+  <!-- điện thoại -->
+  <g filter="url(#s)">
+    <rect x="190" y="30" width="220" height="420" rx="34" fill="#1f1a17"/>
+    <rect x="202" y="42" width="196" height="396" rx="24" fill="#fff"/>
+  </g>
+  <rect x="202" y="42" width="196" height="150" rx="24" fill="url(#g)"/>
+  <rect x="202" y="160" width="196" height="32" fill="url(#g)"/>
+  <rect x="270" y="52" width="60" height="8" rx="4" fill="#1f1a17" opacity="0.35"/>
+  <text x="222" y="92" font-size="14" fill="#fff" opacity="0.9">Số dư ví</text>
+  <text x="222" y="126" font-size="28" font-weight="700" fill="#fff">1.000.000đ</text>
+  <text x="222" y="152" font-size="12" fill="#fff" opacity="0.85">🎁 Kho voucher bạn mới</text>
+  <!-- lưới dịch vụ -->
+  <g font-size="11" fill="#5b524d" text-anchor="middle">
+    <rect x="218" y="208" width="44" height="44" rx="12" fill="#fff1ec"/><text x="240" y="237" font-size="20">📷</text><text x="240" y="268">Quét QR</text>
+    <rect x="278" y="208" width="44" height="44" rx="12" fill="#fff1ec"/><text x="300" y="237" font-size="20">📱</text><text x="300" y="268">Nạp ĐT</text>
+    <rect x="338" y="208" width="44" height="44" rx="12" fill="#fff1ec"/><text x="360" y="237" font-size="20">🧾</text><text x="360" y="268">Hoá đơn</text>
+  </g>
+  <rect x="218" y="288" width="164" height="60" rx="14" fill="#fff7f4" stroke="#f3e2dc"/>
+  <text x="232" y="313" font-size="13" font-weight="700" fill="#1f1a17">SPayLater</text>
+  <text x="232" y="333" font-size="11" fill="#5b524d">Mua trước, trả sau</text>
+  <rect x="218" y="360" width="164" height="44" rx="22" fill="#ee4d2d"/>
+  <text x="300" y="388" font-size="14" font-weight="700" fill="#fff" text-anchor="middle">Thanh toán ngay</text>
+  <!-- thẻ nổi -->
+  <g filter="url(#s)">
+    <rect x="30" y="120" width="170" height="64" rx="16" fill="#fff"/>
+    <text x="48" y="148" font-size="13" font-weight="700" fill="#ee4d2d">Hoàn 15.000 xu</text>
+    <text x="48" y="168" font-size="11" fill="#5b524d">khi quét VietQR</text>
+  </g>
+  <g filter="url(#s)">
+    <rect x="390" y="300" width="150" height="64" rx="16" fill="#fff"/>
+    <text x="408" y="328" font-size="13" font-weight="700" fill="#ee4d2d">✓ Giao dịch</text>
+    <text x="408" y="348" font-size="11" fill="#5b524d">thành công</text>
+  </g>
+</svg>

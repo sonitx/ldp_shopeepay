@@ -1,0 +1,116 @@
+<%- include('partials/head') %>
+<% var L = site.landing; %>
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-copy">
+<% if (L.hero.eyebrow) { %><p class="eyebrow"><%= L.hero.eyebrow %></p><% } %>
+      <h1><%= L.hero.title %></h1>
+      <p class="hero-subtitle"><%= L.hero.subtitle %></p>
+      <div class="hero-actions">
+        <%- include('partials/download-btn', { placement: 'hero', size: 'xl' }) %>
+        <a class="btn btn-lg btn-ghost" href="<%= L.hero.secondaryCta.href %>"><%= L.hero.secondaryCta.label %></a>
+      </div>
+<% if (L.hero.highlights && L.hero.highlights.length) { %>
+      <ul class="hero-highlights">
+<% L.hero.highlights.forEach(function (h) { %>
+        <li><%= h %></li>
+<% }) %>
+      </ul>
+<% } %>
+    </div>
+<% if (L.hero.image) { %>
+    <img class="hero-image" src="<%= L.hero.image %>" alt="Ứng dụng ví điện tử ShopeePay trên điện thoại" width="560" height="480" fetchpriority="high">
+<% } %>
+  </div>
+</section>
+
+<section class="section" id="tinh-nang">
+  <div class="container">
+    <h2 class="section-title">Vì sao nên dùng ví ShopeePay?</h2>
+    <div class="grid features">
+<% L.features.forEach(function (f) { %>
+      <div class="card">
+        <div class="feature-icon" aria-hidden="true"><%= f.icon %></div>
+        <h3><%= f.title %></h3>
+        <p><%= f.text %></p>
+      </div>
+<% }) %>
+    </div>
+    <p class="center section-cta"><%- include('partials/download-btn', { placement: 'features', size: 'lg' }) %></p>
+  </div>
+</section>
+
+<% if (L.promos && L.promos.length) { %>
+<section class="section promos-section" id="uu-dai">
+  <div class="container">
+    <h2 class="section-title">Ưu đãi dành cho bạn</h2>
+    <div class="grid promos">
+<% L.promos.forEach(function (p) { %>
+      <div class="promo">
+        <p class="promo-value"><%= p.value %></p>
+        <h3><%= p.title %></h3>
+        <p><%= p.text %></p>
+      </div>
+<% }) %>
+    </div>
+    <p class="center section-cta"><%- include('partials/download-btn', { placement: 'promos', size: 'xl', variant: 'light' }) %></p>
+  </div>
+</section>
+<% } %>
+
+<% if (L.steps && L.steps.length) { %>
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Bắt đầu chỉ với <%= L.steps.length %> bước</h2>
+    <ol class="grid steps">
+<% L.steps.forEach(function (s) { %>
+      <li class="card"><h3><%= s.title %></h3><p><%= s.text %></p></li>
+<% }) %>
+    </ol>
+    <p class="center section-cta"><%- include('partials/download-btn', { placement: 'steps', size: 'lg' }) %></p>
+  </div>
+</section>
+<% } %>
+
+<% if (site.features.leadForm) { %>
+<%- include('partials/lead-form') %>
+<% } %>
+
+<% if (L.faq && L.faq.length) { %>
+<section class="section">
+  <div class="container narrow">
+    <h2 class="section-title">Câu hỏi thường gặp</h2>
+<% L.faq.forEach(function (item) { %>
+    <details class="faq">
+      <summary><%= item.q %></summary>
+      <p><%= item.a %></p>
+    </details>
+<% }) %>
+  </div>
+</section>
+<% } %>
+
+<% if (L.cta) { %>
+<section class="section cta-band">
+  <div class="container narrow center">
+    <h2><%= L.cta.title %></h2>
+    <p><%= L.cta.subtitle %></p>
+    <%- include('partials/download-btn', { placement: 'cta', size: 'xl', variant: 'light' }) %>
+  </div>
+</section>
+<% } %>
+
+<% if (latestPosts.length) { %>
+<section class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Bài viết mới nhất</h2>
+    <div class="grid posts">
+<% latestPosts.forEach(function (post) { %>
+      <%- include('partials/post-card', { post: post }) %>
+<% }) %>
+    </div>
+    <p class="center"><a class="btn btn-ghost" href="/blog">Xem tất cả bài viết →</a></p>
+  </div>
+</section>
+<% } %>
+<%- include('partials/foot') %>

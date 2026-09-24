@@ -1,0 +1,34 @@
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[functions]
+  node_bundler = "esbuild"
+  # Express/EJS dùng require động → để nguyên trong node_modules thay vì bundle.
+  external_node_modules = ["express", "ejs"]
+  # Template và bài viết markdown được đọc lúc runtime nên phải copy kèm function.
+  included_files = ["views/**", "content/**"]
+
+# File tĩnh trong public/ được ưu tiên (rule không có "force"), mọi đường dẫn còn lại → Express.
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/server/:splat"
+  status = 200
+
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
