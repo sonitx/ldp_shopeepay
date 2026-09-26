@@ -6,7 +6,7 @@
  */
 module.exports = {
   // URL chính thức của website (không có dấu / ở cuối). Dùng cho canonical, sitemap, Open Graph.
-  siteUrl: process.env.SITE_URL || 'https://shopeepay-gioi-thieu.netlify.app',
+  siteUrl: process.env.SITE_URL || 'https://sppay.netlify.app',
 
   name: 'Ví ShopeePay',
   tagline: 'Chạm ứng dụng ShopeePay, mở lối sống tài chính số',
