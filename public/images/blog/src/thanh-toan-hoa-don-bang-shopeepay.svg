@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff7f4"/>
+      <stop offset="1" stop-color="#ffe6dc"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ee4d2d"/>
+      <stop offset="1" stop-color="#d0391b"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#ee4d2d" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="930" cy="315" r="300" fill="#ee4d2d" opacity="0.07"/>
+  <circle cx="930" cy="315" r="200" fill="#ee4d2d" opacity="0.07"/>
+  <rect x="0" y="0" width="14" height="630" fill="url(#brand)"/>
+
+  <!-- Chữ bên trái -->
+  <rect x="80" y="120" width="220" height="44" rx="22" fill="#ee4d2d"/>
+  <text x="190" y="149" font-size="20" font-weight="700" fill="#fff" text-anchor="middle" letter-spacing="1">THANH TOÁN</text>
+  <text x="80" y="260" font-size="64" font-weight="700" fill="#1f1a17">Trả hoá đơn</text>
+  <text x="80" y="340" font-size="64" font-weight="700" fill="#ee4d2d">điện, nước, net</text>
+  <text x="80" y="410" font-size="28" fill="#5b524d">Ngay trên điện thoại, không trễ hạn</text>
+  <rect x="80" y="500" width="44" height="44" rx="11" fill="url(#brand)"/>
+  <rect x="90" y="513" width="24" height="18" rx="4" fill="#fff"/>
+  <text x="140" y="531" font-size="24" font-weight="700" fill="#1f1a17">Ví ShopeePay</text>
+
+  <!-- Hình minh hoạ bên phải -->
+  <g filter="url(#shadow)">
+    <path d="M820 90 H1060 V520 L1030 500 L1000 520 L970 500 L940 520 L910 500 L880 520 L850 500 L820 520 Z" fill="#fff"/>
+<rect x="820" y="90" width="240" height="70" fill="#ee4d2d"/><text x="940" y="135" font-size="26" font-weight="700" fill="#fff" text-anchor="middle">HOÁ ĐƠN</text><circle cx="870" cy="215" r="28" fill="#fff1ec"/><path transform="translate(870,215) scale(0.55)" d="M8 -40 L-22 6 H0 L-8 40 L22 -8 H0 Z" fill="#ffc53d"/><rect x="915" y="203" width="110" height="10" rx="5" fill="#5b524d" opacity="0.4"/><rect x="915" y="222" width="70" height="10" rx="5" fill="#5b524d" opacity="0.25"/><circle cx="870" cy="295" r="28" fill="#fff1ec"/><path transform="translate(870,297) scale(0.55)" d="M0 -40 C18 -14 28 2 28 16 A28 28 0 0 1 -28 16 C-28 2 -18 -14 0 -40 Z" fill="#3aa0ff"/><rect x="915" y="283" width="110" height="10" rx="5" fill="#5b524d" opacity="0.4"/><rect x="915" y="302" width="70" height="10" rx="5" fill="#5b524d" opacity="0.25"/><circle cx="870" cy="375" r="28" fill="#fff1ec"/><g transform="translate(870,372) scale(0.6)"><path d="M-38 -7.6000000000000005 A45.6 45.6 0 0 1 38 -7.6000000000000005" fill="none" stroke="#7c5cff" stroke-width="8" stroke-linecap="round" transform="translate(0,13.299999999999999)"/><path d="M-24 -4.800000000000001 A28.799999999999997 28.799999999999997 0 0 1 24 -4.800000000000001" fill="none" stroke="#7c5cff" stroke-width="8" stroke-linecap="round" transform="translate(0,8.399999999999999)"/><circle cx="0" cy="18" r="7" fill="#7c5cff"/></g><rect x="915" y="363" width="110" height="10" rx="5" fill="#5b524d" opacity="0.4"/><rect x="915" y="382" width="70" height="10" rx="5" fill="#5b524d" opacity="0.25"/><rect x="840" y="440" width="200" height="40" rx="20" fill="#ee4d2d"/><text x="940" y="467" font-size="18" font-weight="700" fill="#fff" text-anchor="middle">Đã thanh toán</text>
+  </g>
+</svg>

@@ -138,6 +138,8 @@ h2 { font-size: clamp(1.5rem, 3vw, 2rem); }
 .post-list { display: grid; gap: 20px; }
 .post-card { border-bottom: 1px solid var(--color-border); padding-bottom: 20px; }
 .posts .post-card { border: 1px solid var(--color-border); border-radius: var(--radius); padding: 24px; background: var(--color-bg); }
+.post-card-image { display: block; width: 100%; aspect-ratio: 1200 / 630; object-fit: cover; border-radius: 10px; margin-bottom: 14px; background: var(--color-bg-alt); }
+.post-list .post-card-image { max-width: 360px; }
 .post-card h3 { font-size: 1.3rem; margin-bottom: 4px; }
 .post-card h3 a { color: var(--color-text); text-decoration: none; }
 .post-card h3 a:hover { color: var(--color-primary); }

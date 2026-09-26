@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff7f4"/>
+      <stop offset="1" stop-color="#ffe6dc"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ee4d2d"/>
+      <stop offset="1" stop-color="#d0391b"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#ee4d2d" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="930" cy="315" r="300" fill="#ee4d2d" opacity="0.07"/>
+  <circle cx="930" cy="315" r="200" fill="#ee4d2d" opacity="0.07"/>
+  <rect x="0" y="0" width="14" height="630" fill="url(#brand)"/>
+
+  <!-- Chữ bên trái -->
+  <rect x="80" y="120" width="220" height="44" rx="22" fill="#ee4d2d"/>
+  <text x="190" y="149" font-size="20" font-weight="700" fill="#fff" text-anchor="middle" letter-spacing="1">GIỚI THIỆU</text>
+  <text x="80" y="260" font-size="64" font-weight="700" fill="#1f1a17">ShopeePay là gì?</text>
+  <text x="80" y="340" font-size="64" font-weight="700" fill="#ee4d2d">4 tính năng hay</text>
+  <text x="80" y="410" font-size="28" fill="#5b524d">Ví điện tử cho chi tiêu hằng ngày</text>
+  <rect x="80" y="500" width="44" height="44" rx="11" fill="url(#brand)"/>
+  <rect x="90" y="513" width="24" height="18" rx="4" fill="#fff"/>
+  <text x="140" y="531" font-size="24" font-weight="700" fill="#1f1a17">Ví ShopeePay</text>
+
+  <!-- Hình minh hoạ bên phải -->
+  <g filter="url(#shadow)">
+    <rect x="820" y="80" width="230" height="440" rx="36" fill="#1f1a17"/>
+<rect x="832" y="92" width="206" height="416" rx="26" fill="#fff"/>
+<rect x="905.0" y="102" width="60" height="8" rx="4" fill="#1f1a17" opacity="0.3"/>
+<g transform="translate(832,124)"><rect x="0" y="0" width="206" height="120" fill="#ee4d2d"/>
+<text x="20" y="42" font-size="16" fill="#fff" opacity="0.9">Số dư ví</text>
+<text x="20" y="86" font-size="32" font-weight="700" fill="#fff">1.000.000đ</text><rect x="16" y="140" width="82" height="82" rx="14" fill="#fff1ec"/><text x="57" y="188" font-size="15" font-weight="700" fill="#ee4d2d" text-anchor="middle">Voucher</text><rect x="108" y="140" width="82" height="82" rx="14" fill="#fff1ec"/><text x="149" y="188" font-size="15" font-weight="700" fill="#ee4d2d" text-anchor="middle">Quét QR</text><rect x="16" y="236" width="82" height="82" rx="14" fill="#fff1ec"/><text x="57" y="284" font-size="15" font-weight="700" fill="#ee4d2d" text-anchor="middle">Dịch vụ</text><rect x="108" y="236" width="82" height="82" rx="14" fill="#fff1ec"/><text x="149" y="284" font-size="15" font-weight="700" fill="#ee4d2d" text-anchor="middle">SPayLater</text></g><circle cx="1100" cy="150" r="44" fill="#ffc53d"/><circle cx="1100" cy="150" r="35" fill="none" stroke="#e8a317" stroke-width="5"/>
+<text x="1100" y="162.32" font-size="32" font-weight="700" fill="#8a5a00" text-anchor="middle">XU</text>
+  </g>
+</svg>

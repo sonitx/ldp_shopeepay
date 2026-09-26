@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff7f4"/>
+      <stop offset="1" stop-color="#ffe6dc"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ee4d2d"/>
+      <stop offset="1" stop-color="#d0391b"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#ee4d2d" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="930" cy="315" r="300" fill="#ee4d2d" opacity="0.07"/>
+  <circle cx="930" cy="315" r="200" fill="#ee4d2d" opacity="0.07"/>
+  <rect x="0" y="0" width="14" height="630" fill="url(#brand)"/>
+
+  <!-- Chữ bên trái -->
+  <rect x="80" y="120" width="220" height="44" rx="22" fill="#ee4d2d"/>
+  <text x="190" y="149" font-size="20" font-weight="700" fill="#fff" text-anchor="middle" letter-spacing="1">ƯU ĐÃI BẠN MỚI</text>
+  <text x="80" y="260" font-size="64" font-weight="700" fill="#1f1a17">Nhận voucher</text>
+  <text x="80" y="340" font-size="64" font-weight="700" fill="#ee4d2d">1 triệu đồng</text>
+  <text x="80" y="410" font-size="28" fill="#5b524d">Cách nhận kho voucher ShopeePay</text>
+  <rect x="80" y="500" width="44" height="44" rx="11" fill="url(#brand)"/>
+  <rect x="90" y="513" width="24" height="18" rx="4" fill="#fff"/>
+  <text x="140" y="531" font-size="24" font-weight="700" fill="#1f1a17">Ví ShopeePay</text>
+
+  <!-- Hình minh hoạ bên phải -->
+  <g filter="url(#shadow)">
+    <rect x="720" y="110" width="400" height="120" rx="18" fill="#ee4d2d"/>
+<circle cx="840.0" cy="110" r="14" fill="#fff7f4"/><circle cx="840.0" cy="230" r="14" fill="#fff7f4"/>
+<line x1="840.0" y1="128" x2="840.0" y2="212" stroke="#fff" stroke-width="3" stroke-dasharray="8 8" opacity="0.7"/>
+<text x="780.0" y="182.0" font-size="34" font-weight="700" fill="#fff" text-anchor="middle">%</text>
+<text x="864.0" y="164.0" font-size="22" fill="#fff" opacity="0.9">Nạp điện thoại</text>
+<text x="864.0" y="198.0" font-size="30" font-weight="700" fill="#fff">Voucher</text><rect x="740" y="255" width="400" height="120" rx="18" fill="#d0391b"/>
+<circle cx="860.0" cy="255" r="14" fill="#fff7f4"/><circle cx="860.0" cy="375" r="14" fill="#fff7f4"/>
+<line x1="860.0" y1="273" x2="860.0" y2="357" stroke="#fff" stroke-width="3" stroke-dasharray="8 8" opacity="0.7"/>
+<text x="800.0" y="327.0" font-size="34" font-weight="700" fill="#fff" text-anchor="middle">%</text>
+<text x="884.0" y="309.0" font-size="22" fill="#fff" opacity="0.9">Hoá đơn</text>
+<text x="884.0" y="343.0" font-size="30" font-weight="700" fill="#fff">Voucher</text><rect x="720" y="400" width="400" height="120" rx="18" fill="#ff7a45"/>
+<circle cx="840.0" cy="400" r="14" fill="#fff7f4"/><circle cx="840.0" cy="520" r="14" fill="#fff7f4"/>
+<line x1="840.0" y1="418" x2="840.0" y2="502" stroke="#fff" stroke-width="3" stroke-dasharray="8 8" opacity="0.7"/>
+<text x="780.0" y="472.0" font-size="34" font-weight="700" fill="#fff" text-anchor="middle">%</text>
+<text x="864.0" y="454.0" font-size="22" fill="#fff" opacity="0.9">Đối tác</text>
+<text x="864.0" y="488.0" font-size="30" font-weight="700" fill="#fff">Voucher</text><circle cx="1100" cy="110" r="44" fill="#ffc53d"/><circle cx="1100" cy="110" r="35" fill="none" stroke="#e8a317" stroke-width="5"/>
+<text x="1100" y="122.32" font-size="32" font-weight="700" fill="#8a5a00" text-anchor="middle">đ</text>
+  </g>
+</svg>
