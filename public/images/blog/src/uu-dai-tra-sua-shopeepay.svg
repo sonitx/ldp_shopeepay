@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff7f4"/>
+      <stop offset="1" stop-color="#ffe6dc"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ee4d2d"/>
+      <stop offset="1" stop-color="#d0391b"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#ee4d2d" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="930" cy="315" r="300" fill="#ee4d2d" opacity="0.07"/>
+  <circle cx="930" cy="315" r="200" fill="#ee4d2d" opacity="0.07"/>
+  <rect x="0" y="0" width="14" height="630" fill="url(#brand)"/>
+
+  <!-- Chữ bên trái -->
+  <rect x="80" y="120" width="220" height="44" rx="22" fill="#ee4d2d"/>
+  <text x="190" y="149" font-size="20" font-weight="700" fill="#fff" text-anchor="middle" letter-spacing="1">ƯU ĐÃI</text>
+  <text x="80" y="260" font-size="64" font-weight="700" fill="#1f1a17">Trà sữa giảm 50%</text>
+  <text x="80" y="340" font-size="64" font-weight="700" fill="#ee4d2d">với ShopeePay</text>
+  <text x="80" y="410" font-size="28" fill="#5b524d">U:Tea, Koi Thé, The Coffee House</text>
+  <rect x="80" y="500" width="44" height="44" rx="11" fill="url(#brand)"/>
+  <rect x="90" y="513" width="24" height="18" rx="4" fill="#fff"/>
+  <text x="140" y="531" font-size="24" font-weight="700" fill="#1f1a17">Ví ShopeePay</text>
+
+  <!-- Hình minh hoạ bên phải -->
+  <g filter="url(#shadow)">
+    <path d="M718.75 340.5 L861.25 340.5 L842.25 540 L737.75 540 Z" fill="#f08a4b"/><rect x="709.25" y="315.8" width="161.5" height="26.599999999999998" rx="9.5" fill="#fff" stroke="#f08a4b" stroke-width="3.8"/><rect x="799.5" y="255.0" width="11.399999999999999" height="66.5" rx="4.75" fill="#1f1a17" transform="rotate(12 805.2 315.8)"/><rect x="739.65" y="397.5" width="100.7" height="60.8" rx="11.399999999999999" fill="#fff" opacity="0.92"/><path d="M978.75 340.5 L1121.25 340.5 L1102.25 540 L997.75 540 Z" fill="#d0391b"/><rect x="969.25" y="315.8" width="161.5" height="26.599999999999998" rx="9.5" fill="#fff" stroke="#d0391b" stroke-width="3.8"/><rect x="1059.5" y="255.0" width="11.399999999999999" height="66.5" rx="4.75" fill="#1f1a17" transform="rotate(12 1065.2 315.8)"/><rect x="999.65" y="397.5" width="100.7" height="60.8" rx="11.399999999999999" fill="#fff" opacity="0.92"/><path d="M833.75 228.50000000000003 L1006.25 228.50000000000003 L983.25 470 L856.75 470 Z" fill="#ee4d2d"/><rect x="822.25" y="198.60000000000002" width="195.5" height="32.199999999999996" rx="11.5" fill="#fff" stroke="#ee4d2d" stroke-width="4.6"/><rect x="931.5" y="125.00000000000004" width="13.799999999999999" height="80.5" rx="5.75" fill="#1f1a17" transform="rotate(12 938.4 198.60000000000002)"/><rect x="859.05" y="297.5" width="121.9" height="73.6" rx="13.799999999999999" fill="#fff" opacity="0.92"/><text x="920" y="346.95000000000005" font-size="34.5" font-weight="700" fill="#ee4d2d" text-anchor="middle">-50%</text>
+  </g>
+</svg>

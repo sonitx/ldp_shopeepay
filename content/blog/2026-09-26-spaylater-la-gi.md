@@ -4,6 +4,7 @@ description: SPayLater là tính năng mua trước trả sau của ví ShopeePa
 date: 2026-09-26
 author: Ví ShopeePay
 tags: [tính năng, thanh toán]
+updated: 2026-09-27
 image: /images/blog/spaylater-la-gi.png
 ---
 
@@ -66,6 +67,8 @@ SPayLater là một trong những tính năng nổi bật của ShopeePay, bên 
 - **Thanh toán mọi QR** từ ví điện tử, ngân hàng và đối tác — xem [quét VietQR bằng ShopeePay](/blog/quet-vietqr-shopeepay-hoan-xu).
 - **Nạp điện thoại, thanh toán hoá đơn** nhanh gọn — xem [thanh toán hoá đơn bằng ShopeePay](/blog/thanh-toan-hoa-don-bang-shopeepay).
 - **Kho voucher 1 triệu** cho người dùng mới — xem [cách nhận voucher 1 triệu ShopeePay](/blog/nhan-voucher-1-trieu-shopeepay).
+
+Đang có chương trình thưởng Xu khi kích hoạt: xem [kích hoạt SPayLater, SEasy nhận đến 1 triệu Xu](/blog/kich-hoat-spaylater-nhan-xu).
 
 ## Câu hỏi thường gặp
 

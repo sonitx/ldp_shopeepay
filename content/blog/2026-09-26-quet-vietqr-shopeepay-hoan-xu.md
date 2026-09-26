@@ -4,6 +4,7 @@ description: Cách quét VietQR bằng ví ShopeePay để chuyển tiền và t
 date: 2026-09-26
 author: Ví ShopeePay
 tags: [ưu đãi, thanh toán]
+updated: 2026-09-27
 image: /images/blog/quet-vietqr-shopeepay-hoan-xu.png
 ---
 
@@ -54,6 +55,8 @@ Theo shopeepay.vn, bạn được **hoàn đến 15.000 xu khi quét VietQR** đ
 - **Kiểm tra lịch sử xu** sau giao dịch để chắc chắn đã được hoàn.
 
 Chương trình hoàn xu có thể thay đổi theo thời gian, hãy xem thông tin mới nhất trong ứng dụng.
+
+Quét ShopeePay tại quán đồ uống cũng đang có ưu đãi giảm 50%: xem [ưu đãi trà sữa ShopeePay](/blog/uu-dai-tra-sua-shopeepay) và [ưu đãi Phúc Long ShopeePay](/blog/uu-dai-phuc-long-shopeepay).
 
 ## Mẹo quét QR an toàn
 
